@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: `${__dirname}/dist`,
         clean: true,
-        publicPath: '/',
+        publicPath: '/dist/',
         filename: 'bundle.js',
     },
     devServer: {
