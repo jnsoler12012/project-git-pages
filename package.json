@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage" : "https://jnsoler12012.github.io/project-git-pages",
   "scripts": {
     "start": "webpack-dev-server --open --devtool eval-source-map --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "",
