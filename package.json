@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage" : ".",
+  "homepage" : "https://jnsoler12012.github.io/project-git-pages",
   "scripts": {
     "start": "webpack-dev-server --open --devtool eval-source-map --mode development",
     "build": "webpack --mode production",
