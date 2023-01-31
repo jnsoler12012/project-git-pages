@@ -1,23 +1,17 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: `${__dirname}/src/index.js`,
     output: {
         path: `${__dirname}/dist`,
         clean: true,
-        publicPath: '/',
+        publicPath: '/dist/',
         filename: 'bundle.js',
     },
     devServer: {
-        static: "./",
-        hot: true,
-        liveReload: true,
-        compress: true,
-        hot: true,
-        liveReload: true,
-        historyApiFallback: true,
-
+        historyApiFallback: {
+            rewrites: [{ from: /\//, to: '/404.html' }],
+        },
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json']
@@ -49,12 +43,5 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             },
         ],
-    },
-    plugins: [
-        new HtmlWebpackPlugin(
-            {
-                template: './index.html',
-            }
-        ),
-    ],
+    }
 }
