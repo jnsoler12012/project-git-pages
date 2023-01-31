@@ -4,7 +4,7 @@ import InteractiveRouterLink from '../Components/InteractiveRouterLink.jsx'
 
 export default function MainPage() {
     return (
-        <div>
+        <div className='div-page'>
             <div>MainPage </div>
             <InteractiveRouterLink as={Link} to={"/time-page"} visualText={"Link to time"}>
                 GO to time page 
