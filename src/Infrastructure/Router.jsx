@@ -6,14 +6,16 @@ import TimePage from '../Presentation/Pages/TimePage.jsx'
 
 export default function Router() {
   return (
-    <div>
-      Starting
-      <Switch>
-        <Route exact path="/" component={MainPage} />
-        <Route exact path="/time-page" component={TimePage} />
-        <Route path='/404' element={ErrorPage} />
-      </Switch>
+    <div id="background">
+      <div id="main-div">
+        Starting
+        <h1 className='titles'>Simple titasdasd</h1>
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/time-page" component={TimePage} />
+          <Route path='/404' element={ErrorPage} />
+        </Switch>
+      </div>
     </div>
-
   )
 }
