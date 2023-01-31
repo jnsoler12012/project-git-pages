@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: `${__dirname}/dist`,
         clean: true,
-        publicPath: '/gh-pages/dist/',
+        publicPath: '/dist/',
         filename: 'bundle.js',
     },
     devServer: {
