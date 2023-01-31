@@ -5,7 +5,7 @@ import InteractiveRouterLink from '../Components/InteractiveRouterLink.jsx'
 export default function TimePage() {
     const fetchFunction = async() => {
 
-        return await fetch('http://worldtimeapi.org/api/timezone/America/Bogota')
+        return await fetch('https://cors-anywhere.herokuapp.com/http://worldtimeapi.org/api/timezone/America/Bogota')
             .then((response) => {
                 console.log(response)
                 return response.json()
