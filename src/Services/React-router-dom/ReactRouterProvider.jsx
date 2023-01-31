@@ -1,11 +1,11 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 function ReactRouterProvider({ children }) {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {children}
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
