@@ -6,11 +6,13 @@ module.exports = {
     output: {
         path: `${__dirname}/dist`,
         clean: true,
-        publicPath: '/',
+        publicPath: '/dist/',
         filename: 'bundle.js',
     },
     devServer: {
-        historyApiFallback: true,
+        historyApiFallback: {
+            rewrites: [{ from: /\//, to: '/404.html' }],
+        },
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json']
